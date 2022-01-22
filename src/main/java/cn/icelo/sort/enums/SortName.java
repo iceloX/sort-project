@@ -14,8 +14,8 @@ public enum SortName {
                     if (SortUtil.less(list[j], list[min])) {
                         min = j;
                     }
-                    SortUtil.exchange(list, i, min);
                 }
+                SortUtil.exchange(list, i, min);
             }
         }
     },
@@ -47,11 +47,14 @@ public enum SortName {
     public abstract void sort(Comparable[] list);
 
     public void doSort(Comparable[] list) {
-        // 打印排序之前
-        // 排序
+        System.out.print("排序之前：");
+        SortUtil.show(list);
+        System.out.print(name + "排序结果：");
         sort(list);
         // 打印
         SortUtil.show(list);
+        // 断言
+        assert SortUtil.checkIsSorted(list);
     }
 
 }
