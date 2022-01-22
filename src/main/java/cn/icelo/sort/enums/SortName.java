@@ -47,10 +47,11 @@ public enum SortName {
     public abstract void sort(Comparable[] list);
 
     public void doSort(Comparable[] list) {
+        // 打印排序之前
         // 排序
         sort(list);
         // 打印
-        SortUtil.show(getName(), list);
+        SortUtil.show(list);
     }
 
 }

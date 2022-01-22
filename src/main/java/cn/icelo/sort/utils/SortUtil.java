@@ -32,9 +32,9 @@ public class SortUtil {
      * 打印数组
      * @param a 数组
      */
-    public static void show(String sortName, Comparable[] a) {
+    public static void show( Comparable[] a) {
         // 在单行中打印数组
-        System.out.println("排序类型："+ sortName + " 结果如下：");
+
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");
         }

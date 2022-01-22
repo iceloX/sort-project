@@ -13,10 +13,13 @@ public abstract class AbstractSort {
     public abstract void sort(Comparable[] list);
 
     public void doSort(Comparable[] sortData) {
+        // 打印排序前
+        SortUtil.show(sortData);
         // 排序
+        System.out.println();
         sort(sortData);
         // 打印
-        SortUtil.show(getSortName(), sortData);
+        SortUtil.show(sortData);
         // 断言
         assert SortUtil.checkIsSorted(sortData);
     }

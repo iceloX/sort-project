@@ -8,6 +8,7 @@ public class TestMain {
     public static void main(String[] args) {
 
         Comparable[] list = SortData.numList;
+
         SortName.SELECT.doSort(list);
         SortName.INSERT.doSort(list);
     }
