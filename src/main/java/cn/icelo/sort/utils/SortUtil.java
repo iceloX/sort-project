@@ -34,7 +34,7 @@ public class SortUtil {
      */
     public static void show(String sortName, Comparable[] a) {
         // 在单行中打印数组
-        System.out.println(sortName + " 的排序结果如下：");
+        System.out.println("排序类型："+ sortName + " 结果如下：");
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");
         }
