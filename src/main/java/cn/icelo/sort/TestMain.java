@@ -9,7 +9,9 @@ public class TestMain {
 
     public static void main(String[] args) {
 
-        Comparable[] list = SortData.numList;
+        Comparable[] list = SortData.strList;
+        AbstractSort sort = new SelectSort();
+        sort.doSort(list);
         SortName.SELECT.doSort(list);
     }
 }

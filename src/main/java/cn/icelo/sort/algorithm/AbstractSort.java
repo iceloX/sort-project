@@ -16,7 +16,9 @@ public abstract class AbstractSort {
         // 排序
         sort(sortData);
         // 打印
-        SortUtil.show(sortName, sortData);
+        SortUtil.show(getSortName(), sortData);
+        // 断言
+        assert SortUtil.checkIsSorted(sortData);
     }
 
 
