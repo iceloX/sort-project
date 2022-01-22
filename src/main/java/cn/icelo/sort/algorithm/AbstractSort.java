@@ -20,8 +20,4 @@ public abstract class AbstractSort {
         // 断言
         assert SortUtil.checkIsSorted(sortData);
     }
-
-
-    ;
-
 }
