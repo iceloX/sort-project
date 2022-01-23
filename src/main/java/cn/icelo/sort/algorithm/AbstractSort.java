@@ -16,7 +16,7 @@ public abstract class AbstractSort {
         // 打印排序前
         System.out.print("排序之前：");
         SortUtil.show(sortData);
-        System.out.print(sortName+"排序结果：");
+        System.out.print(getSortName() + "排序结果：");
         sort(sortData);
         // 打印
         SortUtil.show(sortData);
